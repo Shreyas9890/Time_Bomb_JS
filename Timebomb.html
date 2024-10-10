@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .main-cont {
+            height: 100vh;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #heading{
+            font-size: 50px;
+        }
+
+       
+    </style>
+</head>
+
+<body id="page">
+
+    <div class="main-cont">
+
+        <h1 id="heading">Save the city and defuse the bomb</h1>
+        <br>
+        <h1 id="timer">0</h1>
+        <br>
+        <p class="text-danger" id="message"> Enter correct password otherwise you loss the city</p>
+        <input id="defuser" type="text" class="form-control w-25">
+        <br>
+
+        <img class="bomimg" id="bombimg"
+            src="https://atlas-content-cdn.pixelsquid.com/stock-images/time-bomb-RJE99a9-600.jpg" height="250px"
+            width="300px" alt="">
+        <br>
+        <div>
+            <button onclick="OnClearInterval()" class="btn btn-outline-danger" id="btn">defuse</button>
+        </div>
+        <br>
+
+        <script src="/Time_Bomb_JS/Timebomb.js"></script>
+    </div>
+</body>
+
+</html>
